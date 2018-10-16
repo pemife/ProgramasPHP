@@ -16,15 +16,13 @@
           <th>m</th>
         </thead>
         <tbody>
-          <?php
-          for ($i = 0; $i <= 10; $i++){
-            $res = $numero * $i; ?>
+          <?php for ($i = 0; $i <= 10; $i++){ ?>
             <tr>
               <td><?= $numero ?></td>
               <td>x</td>
               <td><?= $i ?></td>
               <td>=</td>
-              <td><?= $res ?></td>
+              <td><?= $numero * $i ?></td>
             </tr>
           <?php } ?>
         </tbody>
