@@ -6,34 +6,7 @@
   </head>
   <body>
     <?php
-    function mostrarError($mensaje){
-      echo "<h3>Error: $mensaje</h3>";
-    }
-
-    function mostrarTabla($numero){
-      ?>
-      <table>
-        <thead>
-          <th><?= $numero ?></th>
-          <th>x</th>
-          <th>n</th>
-          <th>=</th>
-          <th>m</th>
-        </thead>
-        <tbody>
-          <?php for ($i = 0; $i <= 10; $i++){ ?>
-          <tr>
-            <td><?= $numero ?></td>
-            <td>x</td>
-            <td><?= $i ?></td>
-            <td>=</td>
-            <td><?= $numero * $i ?></td>
-          </tr>
-          <?php } ?>
-        </tbody>
-      </table>
-      <?php
-    }
+    require './auxiliar.php';
 
     if (isset($_GET['numero'])){
       mostrarError("Falta el parámetro <i>num</i>");
